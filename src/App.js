@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
+import OwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <OwlCarousel 
+        items="1"
+        nav
+        dots
+        autoplay
+      >
+        <div className="item">
+          1
+        </div>
+        <div className="item">
+          2
+        </div>
+        <div className="item">
+          3
+        </div>
+      </OwlCarousel>
     </div>
   );
 }
