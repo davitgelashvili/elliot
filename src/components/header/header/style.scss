@@ -1,0 +1,23 @@
+.header {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    z-index: 2;
+
+    &__logo {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    &__menu {
+        list-style: none;
+
+        &--item {
+            display: block;
+        }
+
+        &--link {
+            text-decoration: none;
+        }
+    }
+}
