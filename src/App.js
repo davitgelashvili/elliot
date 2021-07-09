@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import Main from './components/pages/main/index'
+import News from './components/pages/news/index'
 import About from './components/pages/about/index'
 import Faq from './components/pages/faq/index'
 
@@ -18,6 +19,9 @@ function App() {
       <Switch>
         <Route path="/main">
           <Main />
+        </Route>
+        <Route path="/news">
+          <News />
         </Route>
         <Route path="/about">
           <About />

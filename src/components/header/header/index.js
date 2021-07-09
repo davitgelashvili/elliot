@@ -11,6 +11,9 @@ function Header(){
                         <Link to="/main" className="header__menu--link">Main</Link>
                     </li>
                     <li className="header__menu--item">
+                        <Link to="/news" className="header__menu--link">News</Link>
+                    </li>
+                    <li className="header__menu--item">
                         <Link to="/about" className="header__menu--link">About</Link>
                     </li>
                     <li className="header__menu--item">
