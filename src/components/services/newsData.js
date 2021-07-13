@@ -1,13 +1,38 @@
-function NewsData(){
-    let data = fetch('https://jsonplaceholder.typicode.com/posts?_page=1&_limit=20').then(respons => respons.json())
-    .then(result => result)
+import React, {useState, useEffect} from 'react';
 
-    let list = data?.map( (item)=>{
-        console.log(item)
+function NewsData(){
+    // const ItemLimit = props.limit;
+    const [items, setItems] = useState([]);
+
+    useEffect(async () => {
+        const fetchFn = await fetch(
+          `https://jsonplaceholder.typicode.com/posts?_page=1&_limit=20`,
+        );
+        const result = await fetchFn.json();
+     
+        setItems(result);
+    },[]);
+
+    let data = items.map( (item)=>{
+        <div>
+            <h1>{item.title}</h1>
+            <div>{item.body}</div>
+        </div>
+        console.log(item.title);
     } )
-    
+
     return(
-        <div>{list}</div>
+        <>11
+        {
+            items.map( (item)=>{
+                <div>111
+                    <h1>{item.title}</h1>
+                    <div>{item.body}</div>
+                </div>
+                console.log(item.title);
+            } )
+        }
+        </>
     )
 }
 

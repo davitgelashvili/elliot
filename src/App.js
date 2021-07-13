@@ -17,9 +17,6 @@ function App() {
       <Header />
 
       <Switch>
-        <Route path="/main">
-          <Main />
-        </Route>
         <Route path="/news">
           <News />
         </Route>

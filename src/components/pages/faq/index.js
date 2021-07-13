@@ -11,7 +11,11 @@ function Faq(){
         }
 
     return (
-        <TextPage key={content.id} title={content.title} desc={content.desc} />
+        <TextPage 
+            key={content.id} 
+            title={content.title} 
+            desc={content.desc} 
+        />
     )
 }
 

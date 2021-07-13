@@ -37,9 +37,8 @@ function Slider() {
     <>
       <OwlCarousel className="slider"
       items="1"
-      nav
-      dots
-      // autoplay
+      autoplay
+      loop
       >
         {
           content.map(item =>
